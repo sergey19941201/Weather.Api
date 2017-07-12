@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="63.5dp"
+        android:id="@+id/linearLayout2"
+        android:gravity="top"
+        android:background="@drawable/toolbar">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/closeBN"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/closeapp"
+            android:layout_marginRight="4.5dp"
+            android:layout_marginTop="7.0dp" />
+        <TextView
+            android:text="Edit"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="27.0dp"
+            android:id="@+id/textView2"
+            android:layout_marginTop="18.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="57.5dp"
+            android:layout_width="93.0dp"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/leftDrawerBN"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginTop="7.0dp"
+            android:background="@drawable/leftmenu" />
+    </RelativeLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- The Main Content View -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="@drawable/start_screen_converted">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout1">
+                <ListView
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="#05ffffff"
+                    android:dividerHeight="5dp"
+                    android:id="@+id/LVcities" />
+            </LinearLayout>
+        </RelativeLayout>
+    <!-- The Left Navigation Drawer -->
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:cacheColorHint="@android:color/transparent"
+            android:background="#15000000" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

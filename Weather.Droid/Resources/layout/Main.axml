@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:orientation="horizontal"
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="63.5dp"
+      android:id="@+id/linearLayout2"
+      android:gravity="top"
+      android:background="@drawable/toolbar">
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/closeBN"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/closeapp"
+        android:layout_marginRight="4.5dp"
+        android:layout_marginTop="7.0dp" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/leftDrawerBN"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4.5dp"
+        android:layout_marginTop="7.0dp"
+        android:background="@drawable/leftmenu" />
+  </RelativeLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- The Main Content View -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/RelativeLayout"
+            android:background="@drawable/start_screen_converted">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="318.0dp"
+                android:id="@+id/linearLayout1">
+                <TextView
+                    android:text="Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location_text"
+                    android:layout_marginTop="14.0dp"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:visibility="gone" />
+                <TextView
+                    android:text="Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address_text"
+                    android:layout_marginTop="13.5dp"
+                    android:gravity="center"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:text="Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="18.0dp"
+                    android:id="@+id/city"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+                <TextView
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dataTextView"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="66.5dp"
+                    android:id="@+id/linearLayout2">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="103.5dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayout3"
+                        android:layout_gravity="center"
+                        android:layout_centerInParent="true">
+                        <ImageView
+                            android:id="@+id/imageViewWeather"
+                            android:layout_width="52.5dp"
+                            android:layout_height="52.5dp" />
+                        <TextView
+                            android:text="Text"
+                            android:id="@+id/temperature"
+                            android:textColor="#ffffff"
+                            android:layout_width="54.5dp"
+                            android:layout_height="48.5dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:layout_marginTop="6.0dp"
+                            android:layout_marginLeft="8.0dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <TextView
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/weatherDescriptionTextView"
+                    android:gravity="center"
+                    android:textColor="#ffffff" />
+                <TextView
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="72.5dp"
+                    android:id="@+id/windSpeedTextView"
+                    android:gravity="center"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+    <!-- The Left Navigation Drawer -->
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:cacheColorHint="@android:color/transparent"
+            android:background="#15000000" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

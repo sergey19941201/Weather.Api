@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="63.5dp"
+        android:id="@+id/linearLayout2"
+        android:gravity="top"
+        android:background="@drawable/toolbar">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/closeBN"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/closeapp"
+            android:layout_marginRight="4.5dp"
+            android:layout_marginTop="7.0dp" />
+        <TextView
+            android:text="Tell us about troubles in app"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="27.0dp"
+            android:id="@+id/textView2"
+            android:layout_marginTop="18.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="57.0dp"
+            android:layout_width="318.0dp"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/leftDrawerBN"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginTop="7.0dp"
+            android:background="@drawable/leftmenu" />
+    </RelativeLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- The Main Content View -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="@drawable/start_screen_converted">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="438.5dp"
+                android:id="@+id/linearLayout2"
+                android:layout_centerInParent="true">
+                <EditText
+                    android:layout_width="320.5dp"
+                    android:layout_height="384.5dp"
+                    android:id="@+id/reportET"
+                    android:background="#50000000"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="3.5dp"
+                    android:paddingRight="3.5dp"
+                    android:paddingTop="3.5dp" />
+                <Button
+                    android:text="Send"
+                    android:layout_width="277.0dp"
+                    android:layout_height="33.0dp"
+                    android:layout_below="@id/textView1"
+                    android:id="@+id/sendBN"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14.5dp"
+                    android:textColor="#ffffff"
+                    android:background="#10ffffff"
+                    android:textSize="20dp"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </RelativeLayout>
+    <!-- The Left Navigation Drawer -->
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:cacheColorHint="@android:color/transparent"
+            android:background="#15000000" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

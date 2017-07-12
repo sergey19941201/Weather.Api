@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1"
+        android:background="@drawable/start_screen_converted">
+        <ImageView
+            android:layout_width="366.0dp"
+            android:layout_height="174.0dp"
+            android:id="@+id/imageView1"
+            android:layout_marginTop="80.0dp"
+            android:background="@drawable/cloud"
+            android:layout_gravity="center" />
+        <TextView
+            android:text="Welcome to"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="54.0dp"
+            android:textColor="#ffffff" />
+        <TextView
+            android:text="Simple Weather"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="31.0dp"
+            android:textColor="#ffffff" />
+        <TextView
+            android:text="Everything you need to know"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="31.0dp"
+            android:textColor="#ffffff" />
+        <TextView
+            android:text="about weather"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8.0dp"
+            android:textColor="#ffffff" />
+        <Button
+            android:text="Get started"
+            android:layout_width="161.0dp"
+            android:layout_height="60.5dp"
+            android:id="@+id/startBn"
+            android:layout_gravity="center"
+            android:layout_marginTop="16.0dp"
+            android:background="@drawable/bnstart1only"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>

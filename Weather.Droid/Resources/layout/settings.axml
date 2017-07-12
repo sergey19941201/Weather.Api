@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="63.5dp"
+        android:id="@+id/linearLayout2"
+        android:gravity="top"
+        android:background="@drawable/toolbar">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/closeBN"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/closeapp"
+            android:layout_marginRight="4.5dp"
+            android:layout_marginTop="7.0dp" />
+        <TextView
+            android:text="Settings"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="27.0dp"
+            android:id="@+id/textView2"
+            android:layout_marginTop="18.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="57.5dp"
+            android:layout_width="93.0dp"
+            android:textColor="#ffffff" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/leftDrawerBN"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4.5dp"
+            android:layout_marginTop="7.0dp"
+            android:background="@drawable/leftmenu" />
+    </RelativeLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- The Main Content View -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:background="@drawable/start_screen_converted">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout1">
+                <TextView
+                    android:text="Show temperature in:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView1"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#ffffff" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="103.5dp"
+                    android:id="@+id/linearLayout2"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginTop="17.5dp">
+                    <RadioGroup
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/radioGroup1">
+                        <RadioButton
+                            android:layout_width="144.0dp"
+                            android:layout_height="53.5dp"
+                            android:checked="true"
+                            android:text="Celsius"
+                            android:id="@+id/celsiusRB"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:paddingLeft="5dp" />
+                        <RadioButton
+                            android:layout_width="145.0dp"
+                            android:layout_height="43.5dp"
+                            android:text="Fahrenheit"
+                            android:id="@+id/FahrenheitRB"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:paddingLeft="5dp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    <!-- The Left Navigation Drawer -->
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:cacheColorHint="@android:color/transparent"
+            android:background="#15000000" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
